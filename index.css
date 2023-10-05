@@ -1,0 +1,21 @@
+.team-cards {
+  background-color: #C1C1C1;
+  width: 256px;
+  height: 338px;
+
+  border-radius: 35px;
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+}
+
+.team-cards > button {
+  width: 150px;
+  height: 40px;
+
+  border-radius: 35px;
+  border-style: none;
+  background-color: white;
+
+  margin: 230px auto 0px auto;
+}
