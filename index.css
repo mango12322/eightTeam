@@ -1,7 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.desktop4-wrap1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.desktop4-wrap2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  margin-bottom: 30vh;
+}
+
 .team-cards {
   background-color: #C1C1C1;
   width: 256px;
   height: 338px;
+  margin-right: 60px;
 
   border-radius: 35px;
   background-image: url();
@@ -16,6 +39,103 @@
   border-radius: 35px;
   border-style: none;
   background-color: white;
+  color: #C1C1C1;
 
-  margin: 230px auto 0px auto;
+  margin-top: 240px;
+  margin-left: 50px;
+
+  transition: all 0.5s;
+}
+
+.team-cards > button:hover {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.img1 {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+}
+
+.img2 {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+}
+
+.img3 {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+}
+
+.img4 {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+}
+
+.img5 {
+  background-image: url();
+  background-position: center;
+  background-size: cover;
+}
+
+.blackboard {
+
+  background-color: #C1C1C1;
+
+  width: 1130px;
+  height: 624px;
+  border-radius: 35px;
+
+  margin: 100px auto 100px auto;
+}
+
+.blackboard > .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blackboard > .wrap > h4 {
+  font-size: 40px;
+  color: white;
+}
+
+.blackboard > .wrap > input {
+  width: 810px;
+  height: 169px;
+
+  border-radius: 35px;
+  border-style: none;
+
+  margin-bottom: 30px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.blackboard > .wrap > input::placeholder {
+  color: lightgrey;
+  font-size: 15px;
+}
+
+footer {
+  height: 150px;
+  background-color: darkgray;
+  color: white;
+}
+
+footer > .wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  padding: 20px;
 }
