@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8팀 프로필</title>
+
+    <style>
+        body {
+            background-color: #F6EEE2;
+        }
+
+        .frame {
+            width: 1350px;
+            height: 2300px;
+            flex-shrink: 0;
+            margin-left: 280px;
+
+            border: 2px solid #000;
+            background: rgba(217, 217, 217, 0.00);
+        }
+
+        .frame2 {
+            width: 1200px;
+            height: 600px;
+            flex-shrink: 0;
+            margin: 100px 10px 10px 100px;
+
+            /* border: 1px solid #000; */
+            background: rgba(217, 217, 217, 0.00);
+        }
+
+        #profile-picture {
+            width: 520px;
+            height: 520px;
+            flex-shrink: 0;
+            margin-left: 21px;
+        }
+
+        .char {
+            /* background-color: aquamarine; */
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            margin: 0px 10px 100px 50px;
+            width: 200px;
+            height: 200px;
+        }
+
+        .name {
+            color: #2E2F28;
+            font-family: Gmarket Sans;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+
+        }
+
+        .mbti {
+            color: #2E2F28;
+            font-family: Gmarket Sans;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            margin-bottom: 10px;
+        }
+
+        /* .blog {
+            color: #FFF;
+            font-family: Noto Sans;
+            font-size: 27px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-align : center;                        
+        } */
+
+        .part1 {
+            width: 1200px;
+            height: 1350px;
+            flex-shrink: 0;
+            margin: 100px 10px 10px 100px;
+
+            /* border: 1px solid #000; */
+            background: rgba(217, 217, 217, 0.00);
+
+        }
+
+        p {
+            /* background-color: aqua; */
+            color: #999;
+            width: 1000px;
+            margin: 5px 30px auto;
+            color: #8690C4;
+            font-family: Gmarket Sans;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+
+        .box1 {
+            /* background-color: blue; */
+            font-size: 25px;
+            font-weight: 300;            
+            width: 1000px;
+            height: 194px;
+            flex-shrink: 0;
+            display: inline-block;
+            padding: 5px 5px 5px 3px;
+            margin: 5px 30px 30px 25px;
+            border-radius: 25px;
+            background: white;
+            box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.25);
+            word-break: break-all            
+        }
+
+        .btn {
+            width: 100px;
+            height: 40px;
+            flex-shrink: 0;
+
+            border-radius: 10px;
+            background: #FF7438;
+            border: 0px solid #FFF;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+            letter-spacing: 4px;
+            font-family: sans-serif;
+            transition: all 0.4s;
+        }
+
+        .btn2 {
+            font-size: 25px;
+            padding: 10px 45px;
+            background-color: #FF7438;
+            color: white;
+            border-radius: 100150px;
+            border: 1px solid #FFF;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+            letter-spacing: 4px;
+            font-family: sans-serif;
+            transition: all 0.4s;
+        }
+
+        .btncover {
+            height: 0vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn:focus {
+            outline: none;
+        }
+
+        .btn:hover {
+            background-color: white;
+            color: #FF7438;
+        }
+
+        .btn2:focus {
+            outline: none;
+        }
+
+        .btn2:hover {
+            background-color: white;
+            color: #FF7438;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="frame">
+        <div class="frame2">
+            <div class="picture">
+                <img src="https://img.hani.co.kr/imgdb/original/2007/1227/68227042_20071227.jpg" id="profile-picture">
+                <div class="char">
+                    <div class="mbti">
+                        INFP
+                    </div>
+                    <div class="name">
+                        방성현
+                    </div>
+                    <div class="blog">
+                        <button onclick="window.open ('https://red-77.tistory.com/')" class="btn">blog</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="short">
+            <div class="part1">
+                <div>
+                    <p>저의 TMI는요</p>
+                </div>
+                <div>
+                    <div class="box1">
+                       안녕하세요 <!-- 글 적는칸 -->
+                    </div>
+                </div>
+                <div>
+                    <p style="text-align: right;">제가 맡은 역할은요</p>
+                </div>
+                <div>
+                    <div class="box1">
+                        <!-- 글 적는칸 -->
+                    </div>
+                </div>
+                <div>
+                    <p>저의 장점은요</p>
+                </div>
+                <div>
+                    <div class="box1">
+                        <!-- 글 적는칸 -->
+                    </div>
+                </div>
+                <div>
+                    <p style="text-align: right;">저의 협업 스타일은요</p>
+                </div>
+                <div>
+                    <div class="box1">
+                        <!-- 글 적는칸 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btncover">
+            <button class="btn2">close</button>
+        </div>        
+    </div>
+</body>
+
+</html>
