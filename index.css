@@ -1,6 +1,45 @@
 html, body {
   margin: 0;
   padding: 0;
+  background-color: #F6EEE2;
+}
+
+#desktop3 > .wrap {
+  text-align: center;
+  margin-top: 15vw;
+  margin-bottom: 15vw;
+}
+
+#desktop3 > .wrap > h2 {
+  font-size: 5em;
+  color: #FF7438;
+  font-family: 'Kalimar';
+
+  margin-bottom: 50px;
+}
+
+#desktop3 > .wrap > p {
+  font-size: 1.1em;
+  color: #5A5A5A;
+  font-family: 'Gmarket SansMedium';
+
+  margin-bottom: 100px;
+}
+
+#desktop3 > .wrap > h3 {
+  font-size: 2em;
+  color: #5A5A5A;
+  font-family: 'Gmarket Sans';
+}
+
+#desktop3 > .wrap > h3 > span {
+  font-size: 2.5em;
+  color: #FF7438;
+}
+
+#desktop4 {
+  background-color: #8690C4;
+  padding: 30px;
 }
 
 .desktop4-wrap1 {
@@ -8,7 +47,8 @@ html, body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin-top: 10vh;
+  margin-top: 15vh;
+  margin-bottom: 18vh;
 }
 
 .desktop4-wrap2 {
@@ -17,32 +57,30 @@ html, body {
   align-items: center;
   justify-content: center;
   margin-top: 10vh;
-  margin-bottom: 30vh;
+  margin-bottom: 15vh;
 }
 
 .team-cards {
-  background-color: #C1C1C1;
-  width: 256px;
-  height: 338px;
-  margin-right: 60px;
-
-  border-radius: 35px;
-  background-image: url();
-  background-position: center;
-  background-size: cover;
+  width: 340px;
+  height: 400px;
+  margin: 0 50px 0 50px;
 }
 
 .team-cards > button {
-  width: 150px;
+  width: 170px;
   height: 40px;
 
   border-radius: 35px;
-  border-style: none;
-  background-color: white;
-  color: #C1C1C1;
+  border: 1px solid white;
 
-  margin-top: 240px;
-  margin-left: 50px;
+  font-family: 'GmarketSansMedium';
+  font-size: 17px;
+  background-color: #F0B35F;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  color: white;
+
+  margin-top: 10px;
+  margin-left: 90px;
 
   transition: all 0.5s;
 }
@@ -58,41 +96,68 @@ html, body {
   background-image: url();
   background-position: center;
   background-size: cover;
+
+  background-color: white;
+  width: 340px;
+  height: 340px;
 }
 
 .img2 {
   background-image: url();
   background-position: center;
   background-size: cover;
+
+  background-color: white;
+  width: 340px;
+  height: 340px;
 }
 
 .img3 {
   background-image: url();
   background-position: center;
   background-size: cover;
+
+  background-color: white;
+  width: 340px;
+  height: 340px;
 }
 
 .img4 {
   background-image: url();
   background-position: center;
   background-size: cover;
+
+  background-color: white;
+  width: 340px;
+  height: 340px;
 }
 
 .img5 {
   background-image: url();
   background-position: center;
   background-size: cover;
+
+  background-color: white;
+  width: 340px;
+  height: 340px;
+}
+
+#desktop5 > h4 {
+  font-family: 'GmarketSansMedium';
+  font-size: 40px;
+  color:  #5A5A5A;
+  text-align: center;
+  margin-top: 25vh;
 }
 
 .blackboard {
-
-  background-color: #C1C1C1;
+  background-color: #FF7438;
+  border-radius: 0px 50px;
 
   width: 1130px;
-  height: 624px;
-  border-radius: 35px;
+  height: 500px;
 
-  margin: 100px auto 100px auto;
+  margin: 0 auto 35vh auto;
 }
 
 .blackboard > .wrap {
@@ -102,40 +167,63 @@ html, body {
   justify-content: center;
 }
 
-.blackboard > .wrap > h4 {
-  font-size: 40px;
-  color: white;
-}
-
 .blackboard > .wrap > input {
-  width: 810px;
-  height: 169px;
+  width: 900px;
+  height: 60px;
 
-  border-radius: 35px;
+  border-radius: 100px;
   border-style: none;
 
-  margin-bottom: 30px;
   font-size: 15px;
   text-align: center;
+
+  margin-top: 55vh;
+}
+
+.blackboard > .wrap > button {
+  width: 130px;
+  height: 62px;
+
+  background-color: #FF7438;
+  color: white;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+  font-size: 30px;
+
+  border-radius: 100px;
+  border: 2px solid white;
+
+  margin-top: -62px;
+  margin-left: 772px;
+}
+
+.blackboard > .wrap > button:hover {
+  cursor: pointer;
+  background-color: #8690C4;
 }
 
 .blackboard > .wrap > input::placeholder {
   color: lightgrey;
-  font-size: 15px;
+  font-size: 20px;
 }
 
 footer {
-  height: 150px;
-  background-color: darkgray;
-  color: white;
+  height: 120px;
+  color: #FF7438;
+  width: 80vw;
+
+  margin: 0 auto 0 auto;
 }
 
 footer > .wrap {
+  border-top: 2px solid #FF7438;
+}
+
+footer > .wrap > p {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  font-size: 15px;
+  font-size: 20px;
   padding: 20px;
 }
