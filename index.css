@@ -158,6 +158,10 @@ html, body {
   height: 500px;
 
   margin: 0 auto 35vh auto;
+
+  display: grid;
+  grid-template-columns: 900px;
+  grid-template-rows: 60px 60px 60px 60px;
 }
 
 .blackboard-wrap1 {
