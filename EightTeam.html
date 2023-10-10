@@ -121,7 +121,34 @@
     // Firebase 인스턴스 초기화
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
-    
+
+    $("#sendbtn").click(async function () {
+      let text = $('#text').val();
+      console.log(text)
+      let doc = {
+        'text': text
+      };
+
+      await addDoc(collection(db, "messages"), doc);
+      alert('저장 완료!');
+      window.location.reload();
+    })
+
+    let docs = await getDocs(collection(db, "messages"));
+    docs.forEach((doc) => {
+      let row = doc.data();
+
+      let text = row['text'];
+
+      let temp_html = `
+      <div class="card">
+        <div id="text" class="card-body blackboard-letter">
+          ${text}
+        </div>
+      </div>`;
+      $('#addcard').append(temp_html);
+    });
+
 
 
   </script>
@@ -175,42 +202,29 @@
     <div class="desktop4-wrap1">
       <div class="team-cards">
         <img class="img2">
-        <button>이름_팀원</button>
+        <button>이고운_팀장</button>
       </div>
     </div>
 
     <div class="desktop4-wrap2">
       <div class="team-cards">
         <img class="img4">
-        <button>이름_팀원</button>
+        <button>이예지_팀원</button>
       </div>
       <div class="team-cards">
         <img class="img5">
-        <button>이름_팀원</button>
+        <button>방성현_팀원</button>
       </div>
     </div>
   </section>
 
   <section id="desktop5">
     <h4>친해져봐요</h4>
-    <div class="blackboard">
-
-      <div class="card">
-        <div class="card-body blackboard-letter">
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body blackboard-letter">
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body blackboard-letter">
-        </div>
-      </div>
+    <div id="addcard" class="blackboard">
 
       <div class="wrap">
-        <input type="text" placeholder="메세지 입력하기">
-        <button>send</button>
+        <input id="text" type="text" placeholder="메세지 입력하기">
+        <button id="sendbtn">send</button>
       </div>
     </div>
   </section>

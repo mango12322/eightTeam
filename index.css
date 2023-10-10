@@ -92,28 +92,8 @@ html, body {
   cursor: pointer;
 }
 
-.img1 {
-  background-image: url();
-  background-position: center;
-  background-size: cover;
-
-  background-color: white;
-  width: 340px;
-  height: 340px;
-}
-
 .img2 {
-  background-image: url();
-  background-position: center;
-  background-size: cover;
-
-  background-color: white;
-  width: 340px;
-  height: 340px;
-}
-
-.img3 {
-  background-image: url();
+  background-image: url(https://velog.velcdn.com/images/leegu517/post/0ce2f4f1-8a23-4f0c-b056-c83c55611cd2/image.JPG);
   background-position: center;
   background-size: cover;
 
@@ -123,7 +103,7 @@ html, body {
 }
 
 .img4 {
-  background-image: url();
+  background-image: url(./이예지_프로필.jpg);
   background-position: center;
   background-size: cover;
 
@@ -133,7 +113,7 @@ html, body {
 }
 
 .img5 {
-  background-image: url();
+  background-image: url(./방성현_프로필.PNG);
   background-position: center;
   background-size: cover;
 
@@ -155,13 +135,9 @@ html, body {
   border-radius: 0px 50px;
 
   width: 1130px;
-  height: 500px;
 
   margin: 0 auto 35vh auto;
-
-  display: grid;
-  grid-template-columns: 900px;
-  grid-template-rows: 60px 60px 60px 60px;
+  padding: 40px;
 }
 
 .blackboard-wrap1 {
@@ -188,7 +164,7 @@ html, body {
   border-radius: 100px;
   border-style: none;
 
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
 
   background-color: white;
@@ -202,10 +178,9 @@ html, body {
   border-radius: 100px;
   border-style: none;
 
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
 
-  margin-top: 4vh;
 }
 
 .blackboard > .wrap > button {
