@@ -2,78 +2,79 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>8팀 프로필</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8팀 프로필</title>
 
-  <style>
-    body {
-      background-color: #F6EEE2;
-      margin: 0px;
-      padding: 0px;
-      width: 100%;
-      height: 100%;
-    }
+    <style>
+        body {
+            background-color: #F6EEE2;   
+        }
 
-    .frame {
-      width: auto;
-      flex-shrink: 0;
-      /* margin-left: 280px; */
+        .wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
 
-      /* border: 2px solid #000;
+        .frame {
+            width: auto;
+            flex-shrink: 0;
+            /* margin-left: 280px; */
+
+            /* border: 2px solid #000;
             background: rgba(217, 217, 217, 0.00); */
-    }
+        }
 
-    .frame2 {
-      width: 1200px;
-      height: 600px;
-      flex-shrink: 0;
-      margin: 100px 10px 10px 100px;
+        .frame2 {
+            width: 1200px;
+            height: 600px;
+            flex-shrink: 0;
+            margin: 100px 10px 10px 100px;
 
-      /* border: 1px solid #000; */
-      background: rgba(217, 217, 217, 0.00);
-    }
+            /* border: 1px solid #000; */
+            /* background: rgba(217, 217, 217, 0.00); */
+        }
 
-    #profile-picture {
-      width: 520px;
-      height: 520px;
-      background-position: center;
-      background-size: cover;
-      flex-shrink: 0;
-      margin-left: 21px;
-    }
+        #profile-picture {
+            width: 520px;
+            height: 520px;
+            flex-shrink: 0;
+            margin-left: 20px;
+        }
 
-    .char {
-      /* background-color: aquamarine; */
-      display: inline-block;
-      text-align: left;
-      padding: 20px;
-      margin: 0px 10px 100px 50px;
-      width: 200px;
-      height: 200px;
-    }
+        .char {
+            /* background-color: aquamarine; */
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            margin: 0px 50px 100px 50px;
+            width: 200px;
+            height: 200px;
+        }
 
-    .name {
-      color: #2E2F28;
-      font-family: GmarketSansBold;
-      font-size: 60px;
-      font-style: normal;
-      /* font-weight: 400; */
-      line-height: normal;
+        .name {
+            color: #2E2F28;
+            font-family: GmarketSansBold;
+            font-size: 60px;
+            font-style: normal;
+            /* font-weight: 400; */
+            line-height: normal;
+            padding: 5px 0px 15px 0px;
 
-    }
+        }
 
-    .mbti {
-      color: #2E2F28;
-      font-family: GmarketSansMedium;
-      font-size: 45px;
-      font-style: normal;
-      /* font-weight: 500; */
-      line-height: normal;
-      margin-bottom: 10px;
-    }
+        .mbti {
+            color: #2E2F28;
+            font-family: GmarketSansMedium;
+            font-size: 45px;
+            font-style: normal;
+            /* font-weight: 500; */
+            line-height: normal;
+            margin-bottom: 10px;
+        }
 
-    /* .blog {
+        /* .blog {
             color: #FFF;
             font-family: Noto Sans;
             font-size: 27px;
@@ -83,163 +84,177 @@
             text-align : center;                        
         } */
 
-    .part1 {
-      width: 1200px;
-      height: 1350px;
-      flex-shrink: 0;
-      margin: 100px 10px 10px 100px;
+        .part1 {
+            width: 1200px;
+            height: 1350px;
+            flex-shrink: 0;
+            margin: 100px 10px 10px 100px;
 
-      /* border: 1px solid #000; */
-      background: rgba(217, 217, 217, 0.00);
+            /* border: 1px solid #000; */
+            background: rgba(217, 217, 217, 0.00);
 
-    }
+        }
 
-    p {
-      /* background-color: aqua; */
-      color: #999;
-      width: 1000px;
-      margin: 5px 30px auto;
-      color: #8690C4;
-      font-family: Gmarket Sans;
-      font-size: 45px;
-      font-style: normal;
-      font-weight: 500;
-      line-height: normal;
-    }
+        .part1 p {
+            /* background-color: aqua; */
+            width: 1000px;
+            margin: 5px 30px auto;
+            color: #8690C4;
+            font-family: GmarketSansmedium;
+            font-size: 45px;
+        }
 
-    .box1 {
-      /* background-color: blue; */
-      font-size: 25px;
-      font-weight: 300;
-      width: 1000px;
-      height: 194px;
-      flex-shrink: 0;
-      display: inline-block;
-      padding: 5px 5px 5px 3px;
-      margin: 5px 30px 30px 25px;
-      border-radius: 25px;
-      background: white;
-      box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.25);
-      word-break: break-all
-    }
+        .box1 {
+            /* background-color: blue; */
+            width: 1000px;
+            height: 200px;
+            flex-shrink: 0;
+            display: inline-block;
+            padding: 10px;
+            margin: 20px;
+            border-radius: 25px;
+            background: white;
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
+            word-break: break-all            
+        }
 
-    .btn {
-      width: 100px;
-      height: 40px;
-      flex-shrink: 0;
+        .box1 p {
+          font-size: 20px;
+          color: #2e2f28;
+          font-family: Gmarketsanslight;
+          padding: 10px 0px 10px 0px;
+        }
 
-      border-radius: 10px;
-      background: #FF7438;
-      border: 0px solid #FFF;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
-      letter-spacing: 4px;
-      font-family: gmarketsanslight;
-      color: white;
-      transition: all 0.4s;
-    }
+        .btn {
+            width: 100px;
+            height: 40px;
+            flex-shrink: 0;
 
-    .btn2 {
-      font-family: GmarketSansLight;
-      font-size: 30px;
-      padding: 10px 45px;
-      background-color: #FF7438;
-      color: white;
-      border-radius: 100px;
-      border: 2px solid white;
-      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
-      letter-spacing: 4px;
-      transition: all 0.4s;
-    }
+            border-radius: 10px;
+            background: #FF7438;
+            border: 0px solid #FFF;
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
+            letter-spacing: 4px;
+            font-family: gmarketsanslight;
+            color: white;
+            transition: all 0.4s;
+        }
 
-    .btncover {
-      height: 0vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+        .btn2 {
+            font-family: GmarketSansLight;
+            font-size: 30px;
+            padding: 10px 45px;
+            margin-top: 200px;
+            margin-bottom: 200px;
+            background-color: #FF7438;
+            color: white;
+            border-radius: 100px;
+            border: 2px solid white;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+            letter-spacing: 4px;
+            transition: all 0.4s;
+        }
 
-    .btn:focus {
-      outline: none;
-    }
+        .btncover {
+            height: 0vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .btn:hover {
-      background-color: white;
-      color: #FF7438;
-    }
+        .btn:focus {
+            outline: none;
+        }
 
-    .btn2:focus {
-      outline: none;
-    }
+        .btn:hover {
+            background-color: white;
+            color: #FF7438;
+        }
 
-    .btn2:hover {
-      background-color: white;
-      color: #FF7438;
-    }
-  </style>
+        .btn2:focus {
+            outline: none;
+        }
+
+        .btn2:hover {
+            background-color: white;
+            color: #FF7438;
+        }
+    </style>
 </head>
 
-
 <body>
-  <div class="frame">
-    <div class="frame2">
-      <div class="picture">
-        <img src="https://velog.velcdn.com/images/leegu517/post/0ce2f4f1-8a23-4f0c-b056-c83c55611cd2/image.JPG"
-          id="profile-picture">
-        <div class="char">
-          <div class="mbti">
-            ESFP
-          </div>
-          <div class="name">
-            이고운
-          </div>
-          <div class="blog">
-            <button onclick="window.open ('https://velog.io/@leegu517')" class="btn">blog</button>
-          </div>
+  <div class="wrapper">
+    <div class="frame">
+        <div class="frame2">
+            <div class="picture">
+                <img src="./이고운_프로필.JPG" id="profile-picture">
+                <div class="char">
+                    <div class="mbti">
+                        ESFP
+                    </div>
+                    <div class="name">
+                        이고운
+                    </div>
+                    <div class="blog">
+                        <button onclick="window.open ('https://velog.io/@leegu517')" class="btn">blog</button>
+                    </div>
 
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="short">
+            <div class="part1">
+                <div>
+                    <p>저의 TMI는요</p>
+                </div>
+                <div>
+                    <div class="box1">
+                       <p>#저는 J가 아니지만 흥미가 있는 부분에서는 계획하는 것을 좋아합니다.</p>
+                       <p>#특히 특정 이벤트가 있을 때 서치를 통해 후기를 찾아보고 비교 분석하는 것을 즐깁니다.</p>
+                       <p>#물론 본투비 P이기 때문에 계획이 어긋나도 스트레스는 받지 않습니다 ㅎㅎ</p>
+                       <p></p> <!-- 글 적는칸 -->
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <p style="text-align: right;">제가 맡은 역할은요</p>
+                </div>
+                <div>
+                    <div class="box1">
+                        <p>#웹 페이지의 하단 html, css 작업을 하였습니다.</p>
+                        <p>#firebase와 웹 페이지를 연결하여 저장된 데이터를 웹에서 볼 수 있도록 구현하였습니다.</p><!-- 글 적는칸 -->
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <p>저의 장점은요</p>
+                </div>
+                <div>
+                    <div class="box1">
+                        <p>#저는 긍정적이고 낙천적인 사람입니다.</p>
+                        <p>#그렇기 때문에 힘든 일이 생기거나 실패했을 때 쉽게 극복하고 다시 일어나는 편입니다.</p>
+                        <p>#호기심이 많고 집요한 편</p><!-- 글 적는칸 -->
+                    </div>
+                </div>
+                <br>
+                <div>
+                    <p style="text-align: right;">저의 협업 스타일은요</p>
+                </div>
+                <div>
+                    <div class="box1">
+                        <p>#혼자가 아닌 다른 사람과 함께 작업을 할 때의 저는 </p>
+                        <p>#의견 제시를 많이하는 편입니다.</p>
+                        <p>#그리고 다른 사람들과 의견을 일치시키기 위해 노력합니다.</p>
+                        <p>#다른 사람에게 피해를 끼치지 않기 위해 최대한 제가 할 수 있는 일을 하려고 노력합니다.</p><!-- 글 적는칸 -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btncover">
+            <button class="btn2"><a href="./EightTeam.html">close</a></button>
+        </div>        
     </div>
-    <div class="short">
-      <div class="part1">
-        <div>
-          <p>저의 TMI는요</p>
-        </div>
-        <div>
-          <div class="box1">
-            안녕하세요 <!-- 글 적는칸 -->
-          </div>
-        </div>
-        <div>
-          <p style="text-align: right;">제가 맡은 역할은요</p>
-        </div>
-        <div>
-          <div class="box1">
-            <!-- 글 적는칸 -->
-          </div>
-        </div>
-        <div>
-          <p>저의 장점은요</p>
-        </div>
-        <div>
-          <div class="box1">
-            저는 긍정적이고 낙천적인 사람입니다 ! <br>
-            실패하거나 힘든 일이 생겼을 때 일어날 수 있는 힘이 있습니다.<!-- 글 적는칸 -->
-          </div>
-        </div>
-        <div>
-          <p style="text-align: right;">저의 협업 스타일은요</p>
-        </div>
-        <div>
-          <div class="box1">
-            <!-- 글 적는칸 -->
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="btncover">
-      <button onclick="window.close()" class="btn2">close</button>
-    </div>
-  </div>
+  </div>    
 </body>
 
 </html>
