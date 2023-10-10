@@ -10,29 +10,39 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR&display=swap');
 
-    .container {
-      background-color: #F0B35F;
-      height: 70px;
-    }
-
-    .header .header-menu>main {
-      text-align: left;
-      font-size: 30px;
-    }
-
-    .header .header-menu {
-      font-family: 'GmarketSansMedium';
-      text-align: right;
-      margin-right: 200px;
-      padding-top: 10px;
-      font-size: 25px;
-    }
-
-    .header .header-menu a {
+    a {
       color: #fff;
-      padding: 10px;
-      display: inline-block;
       text-decoration-line: none;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      opacity: 0.8;
+      backdrop-filter: blur(30px);
+
+      height: 60px;
+      padding: 0 1rem;
+      background-color: #F0B35F;
+    }
+
+    .header-menu {
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
+      height: 100%;
+    }
+
+    .header-memu .main {
+      margin-right: auto;
+      font-size: 6rem;
+      font-weight: bold;
+      font-family: 'GmarketSansMedium';
+    }
+
+    .header-menu a:not(.main) {
+      margin-left: 2em;
     }
 
     .header .header-menu a:hover {
@@ -156,17 +166,15 @@
 
 <body>
   <!-- 예지 -->
-  <div class="container">
-    <div class="header">
 
-      <div class="header-menu">
-        <a href="#" class="main">Eighting</a>
-        <a href="#">we</a>
-        <a href="#">contact</a>
-      </div>
-
+  <nav class="header">
+    <div class="header-menu">
+      <a href="#" class="main">Eighting</a>
+      <a href="#">we</a>
+      <a href="#">contact</a>
     </div>
-  </div>
+  </nav>
+
 
   <section id="desktop1">
     <div class="project">
@@ -201,19 +209,19 @@
   <section id="desktop4">
     <div class="desktop4-wrap1">
       <div class="team-cards">
-        <img class="img2">
-        <button onclick="window.open ('file:///C:/Users/USER/Desktop/eightTeam/Profile1.html')">이고운_팀장</button>
+        <img class="img1">
+        <button><a href="./Profile1.html">이고운_팀장</a></button>
       </div>
     </div>
 
     <div class="desktop4-wrap2">
       <div class="team-cards">
-        <img class="img4">
-        <button onclick="window.open ('file:///C:/Users/USER/Desktop/eightTeam/Profile2.html')">이예지_팀원</button>
+        <img class="img2">
+        <button><a href="./Profile2.html">이예지_팀원</a></button>
       </div>
       <div class="team-cards">
-        <img class="img5">
-        <button onclick="window.open ('file:///C:/Users/USER/Desktop/eightTeam/Profile3.html')">방성현_팀원</button>
+        <img class="img3">
+        <button><a href="./Profile3.html">방성현_팀원</a></button>
       </div>
     </div>
   </section>

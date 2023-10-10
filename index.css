@@ -92,7 +92,7 @@ html, body {
   cursor: pointer;
 }
 
-.img2 {
+.img1 {
   background-image: url(https://velog.velcdn.com/images/leegu517/post/0ce2f4f1-8a23-4f0c-b056-c83c55611cd2/image.JPG);
   background-position: center;
   background-size: cover;
@@ -102,7 +102,7 @@ html, body {
   height: 340px;
 }
 
-.img4 {
+.img2 {
   background-image: url(./이예지_프로필.jpg);
   background-position: center;
   background-size: cover;
@@ -112,7 +112,7 @@ html, body {
   height: 340px;
 }
 
-.img5 {
+.img3 {
   background-image: url(./방성현_프로필.PNG);
   background-position: center;
   background-size: cover;
@@ -166,6 +166,7 @@ html, body {
 
   font-size: 20px;
   text-align: center;
+  align-items: center;
 
   background-color: white;
   margin: 40px auto 0px auto;
