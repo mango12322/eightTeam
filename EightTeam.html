@@ -135,6 +135,20 @@
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
 
+    $('.main').click(function () {
+      window.scrollTo(0, 0, window.innerHeight);
+    })
+
+    $('we').click(function () {
+      window.scrollTo(0, 300, window.innerHeight);
+    })
+
+    $('we').click(function () {
+      window.scrollTo(0, 600);
+    })
+
+    
+
     $("#sendbtn").click(async function () {
       let text = $('#text').val();
       console.log(text)
