@@ -8,11 +8,13 @@
 
     <style>
         body {
-            background-color: #F6EEE2;
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
-            height: 100%;            
+            background-color: #F6EEE2;   
+        }
+
+        .wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .frame {
@@ -31,14 +33,14 @@
             margin: 100px 10px 10px 100px;
 
             /* border: 1px solid #000; */
-            background: rgba(217, 217, 217, 0.00);
+            /* background: rgba(217, 217, 217, 0.00); */
         }
 
         #profile-picture {
             width: 520px;
             height: 520px;
             flex-shrink: 0;
-            margin-left: 21px;
+            margin-left: 20px;
         }
 
         .char {
@@ -46,7 +48,7 @@
             display: inline-block;
             text-align: left;
             padding: 20px;
-            margin: 0px 10px 100px 50px;
+            margin: 0px 50px 100px 50px;
             width: 200px;
             height: 200px;
         }
@@ -58,6 +60,7 @@
             font-style: normal;
             /* font-weight: 400; */
             line-height: normal;
+            padding: 5px 0px 15px 0px;
 
         }
 
@@ -92,33 +95,34 @@
 
         }
 
-        p {
+        .part1 p {
             /* background-color: aqua; */
-            color: #999;
             width: 1000px;
             margin: 5px 30px auto;
             color: #8690C4;
-            font-family: Gmarket Sans;
+            font-family: GmarketSansmedium;
             font-size: 45px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
         }
 
         .box1 {
             /* background-color: blue; */
-            font-size: 25px;
-            font-weight: 300;            
             width: 1000px;
-            height: 194px;
+            height: 200px;
             flex-shrink: 0;
             display: inline-block;
-            padding: 5px 5px 5px 3px;
-            margin: 5px 30px 30px 25px;
+            padding: 10px;
+            margin: 20px;
             border-radius: 25px;
             background: white;
-            box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
             word-break: break-all            
+        }
+
+        .box1 p {
+          font-size: 20px;
+          color: #2e2f28;
+          font-family: Gmarketsanslight;
+          padding: 10px 0px 10px 0px;
         }
 
         .btn {
@@ -129,7 +133,7 @@
             border-radius: 10px;
             background: #FF7438;
             border: 0px solid #FFF;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
             letter-spacing: 4px;
             font-family: gmarketsanslight;
             color: white;
@@ -140,6 +144,8 @@
             font-family: GmarketSansLight;
             font-size: 30px;
             padding: 10px 45px;
+            margin-top: 350px;
+            margin-bottom: 200px;
             background-color: #FF7438;
             color: white;
             border-radius: 100px;
@@ -176,12 +182,12 @@
     </style>
 </head>
 
-
 <body>
+  <div class="wrapper">
     <div class="frame">
         <div class="frame2">
             <div class="picture">
-                <img src="https://img.hani.co.kr/imgdb/original/2007/1227/68227042_20071227.jpg" id="profile-picture">
+                <img src="./방성현_프로필.PNG" id="profile-picture">
                 <div class="char">
                     <div class="mbti">
                         INFP
@@ -203,30 +209,41 @@
                 </div>
                 <div>
                     <div class="box1">
-                       안녕하세요 <!-- 글 적는칸 -->
+                       <p>#축구 보는 거 좋아합니다.</p>
+                       <p>#이강인 어렸을 때부터 경기를 다 찾아봤습니다.</p>
+                       <p>#화려한 개인기 쓰는 선수를 좋아합니다.</p>
+                        <!-- 글 적는칸 -->
                     </div>
                 </div>
+                <br>
                 <div>
                     <p style="text-align: right;">제가 맡은 역할은요</p>
                 </div>
                 <div>
                     <div class="box1">
+                        <p>#프로필 창 뼈대 및 CSS작업을 했습니다.</p>
                         <!-- 글 적는칸 -->
                     </div>
                 </div>
+                <br>
                 <div>
                     <p>저의 장점은요</p>
                 </div>
                 <div>
                     <div class="box1">
-                        <!-- 글 적는칸 -->
+                        <p>#차분하고 남들의 이야기를 잘 들어줍니다.</p>
+                        <p>#깔끔하고 부지런합니다.</p>
+                        <p>#어떤 일이 주어지면 미루지 않고 바로 실행해 옮기며 처리합니다.</p><!-- 글 적는칸 -->
                     </div>
                 </div>
+                <br>
                 <div>
                     <p style="text-align: right;">저의 협업 스타일은요</p>
                 </div>
                 <div>
                     <div class="box1">
+                        <p>#팀원 간의 소통을 중요시합니다. </p>
+                        <p>#각자의 관점에 대해 포용적입니다. </p>                        
                         <!-- 글 적는칸 -->
                     </div>
                 </div>
@@ -236,6 +253,7 @@
             <button onclick="window.close()" class="btn2">close</button>
         </div>        
     </div>
+  </div>    
 </body>
 
 </html>
