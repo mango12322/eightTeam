@@ -8,11 +8,13 @@
 
     <style>
         body {
-            background-color: #F6EEE2;
-            margin: 0px;
-            padding: 0px;
-            width: 100%;
-            height: 100%;            
+            background-color: #F6EEE2;   
+        }
+
+        .wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
 
         .frame {
@@ -31,14 +33,14 @@
             margin: 100px 10px 10px 100px;
 
             /* border: 1px solid #000; */
-            background: rgba(217, 217, 217, 0.00);
+            /* background: rgba(217, 217, 217, 0.00); */
         }
 
         #profile-picture {
             width: 520px;
             height: 520px;
             flex-shrink: 0;
-            margin-left: 21px;
+            margin-left: 20px;
         }
 
         .char {
@@ -46,7 +48,7 @@
             display: inline-block;
             text-align: left;
             padding: 20px;
-            margin: 0px 10px 100px 50px;
+            margin: 0px 50px 100px 50px;
             width: 200px;
             height: 200px;
         }
@@ -58,6 +60,7 @@
             font-style: normal;
             /* font-weight: 400; */
             line-height: normal;
+            padding: 5px 0px 15px 0px;
 
         }
 
@@ -92,33 +95,34 @@
 
         }
 
-        p {
+        .part1 p {
             /* background-color: aqua; */
-            color: #999;
             width: 1000px;
             margin: 5px 30px auto;
             color: #8690C4;
-            font-family: Gmarket Sans;
+            font-family: GmarketSansmedium;
             font-size: 45px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
         }
 
         .box1 {
             /* background-color: blue; */
-            font-size: 25px;
-            font-weight: 300;            
             width: 1000px;
-            height: 194px;
+            height: 200px;
             flex-shrink: 0;
             display: inline-block;
-            padding: 5px 5px 5px 3px;
-            margin: 5px 30px 30px 25px;
+            padding: 10px;
+            margin: 20px;
             border-radius: 25px;
             background: white;
-            box-shadow: 0px 0px 17px 0px rgba(0, 0, 0, 0.25);
+            box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
             word-break: break-all            
+        }
+
+        .box1 p {
+          font-size: 20px;
+          color: #2e2f28;
+          font-family: Gmarketsanslight;
+          padding: 10px 0px 10px 0px;
         }
 
         .btn {
@@ -129,7 +133,7 @@
             border-radius: 10px;
             background: #FF7438;
             border: 0px solid #FFF;
-            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
             letter-spacing: 4px;
             font-family: gmarketsanslight;
             color: white;
@@ -140,6 +144,8 @@
             font-family: GmarketSansLight;
             font-size: 30px;
             padding: 10px 45px;
+            margin-top: 200px;
+            margin-bottom: 200px;
             background-color: #FF7438;
             color: white;
             border-radius: 100px;
@@ -176,8 +182,8 @@
     </style>
 </head>
 
-
 <body>
+  <div class="wrapper">
     <div class="frame">
         <div class="frame2">
             <div class="picture">
@@ -203,31 +209,43 @@
                 </div>
                 <div>
                     <div class="box1">
-                       안녕하세요 <!-- 글 적는칸 -->
+                       <p>#좋아하는 영화장르는 액션, 느와르인데 그 중 에서도 마블 시리즈를 가장 좋아합니다.</p>
+                       <p>#마블 캐릭터 중에는 토르를 가장 좋아합니다.</p>
+                       <p>#좋아하지 않는 장르는 공포영화이고 귀신 나오는 영화 절대 못 봅니다.</p>
+                       <p>#세상에 귀신이 진짜 있을수도 있잖아요...</p> <!-- 글 적는칸 -->
                     </div>
                 </div>
+                <br>
                 <div>
                     <p style="text-align: right;">제가 맡은 역할은요</p>
                 </div>
                 <div>
                     <div class="box1">
-                        <!-- 글 적는칸 -->
+                        <p>#팀원들의 레퍼런스를 모아서 팀 소개페이지의 레이아웃 구성 및 컬러 작업을 하였습니다.</p>
+                        <p>#웹 페이지의 상단 html, css작업을 맡았습니다.</p><!-- 글 적는칸 -->
                     </div>
                 </div>
+                <br>
                 <div>
                     <p>저의 장점은요</p>
                 </div>
                 <div>
                     <div class="box1">
-                        <!-- 글 적는칸 -->
+                        <p>#눈치가 빠르고 적당한 센스를 가지고 있습니다.</p>
+                        <p>#어떻게 보면 그냥 오지랖 넓은 사람이지만 호기심이 많아서 주변 상황에 대한 파악을 빨리하는 편입니다.</p>
+                        <p>#꼼꼼하고 세심한편</p><!-- 글 적는칸 -->
                     </div>
                 </div>
+                <br>
                 <div>
                     <p style="text-align: right;">저의 협업 스타일은요</p>
                 </div>
                 <div>
                     <div class="box1">
-                        <!-- 글 적는칸 -->
+                        <p>#혼자가 아닌 다른 사람과 함께 작업을 할 때의 저는 </p>
+                        <p>#우선 모든 사람들이 본인만의 스타일이나 습관이 있기 때문에 그것에 대해 먼저 파악하려고 합니다.</p>
+                        <p>#그 중간지점에서 최선의방법을 찾기 위해서는 대화가 중요하다고 생각합니다.</p>
+                        <p>#의견공유와 피드백을 많이하는걸 좋아해서 질문도 많이 하려고 합니다.</p><!-- 글 적는칸 -->
                     </div>
                 </div>
             </div>
@@ -236,6 +254,7 @@
             <button onclick="window.close()" class="btn2">close</button>
         </div>        
     </div>
+  </div>    
 </body>
 
 </html>
