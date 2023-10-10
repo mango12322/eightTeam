@@ -139,11 +139,6 @@
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
 
-    window.addEventListener('scroll', () => {
-      //스크롤을 할 때마다 로그로 현재 스크롤의 위치가 찍혀나온다.
-      console.log(window.scrollX, window.scrollY);
-    });
-
     $('.main').click(function () {
       window.scrollTo({
         top: 0, left: 0, behavior: 'smooth'
@@ -189,9 +184,7 @@
       </div>`;
       $('#addcard').append(temp_html);
     });
-
-
-
+    
   </script>
 </head>
 
