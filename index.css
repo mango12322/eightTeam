@@ -1,16 +1,17 @@
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #F6EEE2;
 }
 
-#desktop3 > .wrap {
+#desktop3>.wrap {
   text-align: center;
   margin-top: 15vw;
   margin-bottom: 15vw;
 }
 
-#desktop3 > .wrap > h2 {
+#desktop3>.wrap>h2 {
   font-size: 5em;
   color: #FF7438;
   font-family: 'Kalimar';
@@ -18,7 +19,7 @@ html, body {
   margin-bottom: 50px;
 }
 
-#desktop3 > .wrap > p {
+#desktop3>.wrap>p {
   font-size: 1.1em;
   color: #5A5A5A;
   font-family: 'Gmarket SansMedium';
@@ -26,13 +27,13 @@ html, body {
   margin-bottom: 100px;
 }
 
-#desktop3 > .wrap > h3 {
+#desktop3>.wrap>h3 {
   font-size: 2em;
   color: #5A5A5A;
   font-family: 'Gmarket Sans';
 }
 
-#desktop3 > .wrap > h3 > span {
+#desktop3>.wrap>h3>span {
   font-size: 2.5em;
   color: #FF7438;
 }
@@ -66,7 +67,7 @@ html, body {
   margin: 0 50px 0 50px;
 }
 
-.team-cards > button {
+.team-cards>button {
   width: 170px;
   height: 40px;
 
@@ -85,7 +86,7 @@ html, body {
   transition: all 0.5s;
 }
 
-.team-cards > button:hover {
+.team-cards>button:hover {
   background-color: transparent;
   color: white;
   border: 1px solid white;
@@ -122,10 +123,10 @@ html, body {
   height: 340px;
 }
 
-#desktop5 > h4 {
+#desktop5>h4 {
   font-family: 'GmarketSansMedium';
   font-size: 40px;
-  color:  #5A5A5A;
+  color: #5A5A5A;
   text-align: center;
   margin-top: 25vh;
 }
@@ -150,7 +151,7 @@ html, body {
   margin: 0 auto 0 auto;
 }
 
-.blackboard > .wrap {
+.blackboard>.wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -158,6 +159,8 @@ html, body {
 }
 
 .blackboard-letter {
+  display: flex;
+  justify-content: center;
   width: 900px;
   height: 60px;
 
@@ -169,10 +172,13 @@ html, body {
   align-items: center;
 
   background-color: white;
+  color: #5A5A5A;
   margin: 40px auto 0px auto;
 }
 
-.blackboard > .wrap > input {
+#text {}
+
+.blackboard>.wrap>input {
   width: 900px;
   height: 60px;
 
@@ -184,7 +190,7 @@ html, body {
 
 }
 
-.blackboard > .wrap > button {
+.blackboard>.wrap>button {
   width: 130px;
   height: 62px;
 
@@ -201,12 +207,12 @@ html, body {
   margin-left: 772px;
 }
 
-.blackboard > .wrap > button:hover {
+.blackboard>.wrap>button:hover {
   cursor: pointer;
   background-color: #8690C4;
 }
 
-.blackboard > .wrap > input::placeholder {
+.blackboard>.wrap>input::placeholder {
   color: lightgrey;
   font-size: 20px;
 }
@@ -219,10 +225,10 @@ footer {
   margin: 0 auto 0 auto;
 }
 
-footer > .wrap {
+footer>.wrap {
   border-top: 2px solid #FF7438;
 }
 
-footer > .wrap > p {
+footer>.wrap>p {
   font-size: 15px;
 }
