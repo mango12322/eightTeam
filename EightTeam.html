@@ -42,6 +42,11 @@
       font-family: 'GmarketSansMedium';
     }
 
+    .main {
+      font-size: 25px;
+      font-family: 'kalimar';
+    }
+
     .header-menu a:not(.main) {
       margin-left: 2em;
     }
@@ -128,10 +133,21 @@
       measurementId: "G-BFKHS511PZ"
     };
 
-
     // Firebase 인스턴스 초기화
     const app = initializeApp(firebaseConfig);
     const db = getFirestore(app);
+
+    $('.main').on('click', function(){
+      window.scrollTo(0, 0, window.innerHeight);
+    })
+
+    $('.header-we-btn').on('click', function(){
+      window.scrollTo(0, 2000, window.innerHeight);
+    })
+
+    $('.header-contact-btn').on('click', function(){
+      window.scrollTo(0, 3000, window.innerHeight);
+    })
 
     $("#sendbtn").click(async function () {
       let text = $('#text').val();
@@ -172,8 +188,8 @@
     <div class="header-menu">
       <a href="#" class="main">Eighting</a>
       <div>
-        <a href="#">we</a>
-        <a href="#">contact</a>
+        <a href="#" class="header-we-btn">we</a>
+        <a href="#" class="header-contact-btn">contact</a>
       </div>
     </div>
 
