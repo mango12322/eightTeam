@@ -22,7 +22,8 @@ body {
 #desktop3>.wrap>p {
   font-size: 1.1em;
   color: #5A5A5A;
-  font-family: 'Gmarket SansMedium';
+  font-family: 'GmarketSanslight';
+  line-height: 25px;
 
   margin-bottom: 100px;
 }
